@@ -1,6 +1,6 @@
 var ip = require('ip');
 var PeerServer = require('peer').PeerServer;
-var port = 9000;
+var port = process.env.OPENSHIFT_NODEJS_PORT||9000;
 var server = new PeerServer({port: port});
 
 server.on('connection', function (id) {

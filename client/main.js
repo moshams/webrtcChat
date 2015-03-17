@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   // PeerJS server location
-  var SERVER_IP = process.env.OPENSHIFT_NODEJS_IP ||'127.0.0.1';
-  var SERVER_PORT = process.env.OPENSHIFT_NODEJS_PORT||9000;
+  var SERVER_IP = '127.0.0.1';
+  var SERVER_PORT = 9000;
 
   // DOM elements manipulated as user interacts with the app
   var messageBox = document.querySelector('#messages');
