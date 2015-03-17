@@ -13,4 +13,4 @@ server.on('disconnect', function (id) {
 });
 
 console.log('peer server running on ' +
-            ip.address() + ':' + port);
+            ip + ':' + port);
