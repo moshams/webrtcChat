@@ -1,7 +1,7 @@
-var ip = require('ip');
+var ip = "45.55.138.166"
 var PeerServer = require('peer').PeerServer;
 var port = 9000;
-var server = new PeerServer({port: port});
+var server = new PeerServer({port: port, allow_discovery: true});
 
 server.on('connection', function (id) {
   console.log('new connection with id ' + id);
